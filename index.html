@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PvFitness Info</title>
+  
+  <style>
+    /* Common styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .con {
+      position: absolute;
+      width: 100vw;
+      background-size: cover; /* Scale the background image to cover the entire container */
+      background-position: center; /* Center the background image */
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    /* Container */
+    .container {
+      position: absolute;
+      width: 100vw;
+      background-image: url("photo-1517838277536-f5f99be501cd.jpg"); /* Background image URL */
+      background-size: cover; /* Scale the background image to cover the entire container */
+      background-position: center; /* Center the background image */
+      padding: 20px;
+      box-sizing: border-box;
+      top: 0;
+      text-align: right;
+      align-items: center;
+    }
+
+    /* Center the container in the middle of the screen */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Login button */
+    .btn {
+      background-color: #21ace7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #9d9a97;
+    }
+
+    /* Heading styles */
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: aliceblue;
+      font-size: 4vw;
+    }
+
+    h2 {
+      position: absolute;
+      font-size: 4vw; /* Responsive font size based on viewport width */
+      margin: 5px;
+      font-style: Georgia;
+      top: 45%;
+    }
+    h3 {
+      font-size: 4vw; /* Responsive font size based on viewport width */
+      margin: 5px;
+      position: absolute;
+      left: 60%;
+      top: 62%;
+    }
+
+    h4 {
+      font-size: 4vw; /* Responsive font size based on viewport width */
+      margin: 5px;
+      position: absolute;
+      left: 30%;
+      top: 54%;
+    }
+
+    /* Image styles */
+img {
+  position: absolute;
+  max-width: 40%; /* Adjust the image width to your preference */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  right: 10px; /* Move the image to the right end */
+  top: 80%; /* Adjust the vertical position of the image */
+  transform: translateY(-50%); /* Center the image vertically */
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 6vw;
+  }
+
+  h2, h3, h4 {
+    font-size: 6vw;
+  }
+
+  /* Adjust the image size and position on mobile */
+  img {
+    max-width: 70%;
+    right: 10px; /* Move the image to the right end */
+    top: 90%; /* Adjust the vertical position of the image */
+    transform: translateY(-50%); /* Center the image vertically */
+    box-sizing: border-box;
+  }
+}
+.h2 {
+      position: relative;
+      
+      font-size: 5vw; /* Responsive font size based on viewport width */
+      color: rgb(22, 23, 23);
+      margin-top: 30px;
+    }
+
+    .h2-container {
+        position: absolute;
+      text-align: center;
+      top: 70%;
+      left: 10%;
+      
+    }
+
+
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <h1>FITNESS INFO</h1>
+    <input type="submit" id="login" value="Login" class="btn" onclick="redirectToNextPage()">
+  </div>
+  <img src="https://t4.ftcdn.net/jpg/01/67/71/35/240_F_167713507_VtVBLgRpIJO6cN5iYwYsmm39KLT5TFGo.jpg">
+
+  <script>
+    function redirectToNextPage() {
+      // Redirect to the next page
+      window.location.href = "second.html";
+    }
+  </script>
+  <div class="h2-container">
+    <h2 class="h2">COMMIT TO<br>BE FIT</h2>
+  </div>
+</body>
+</html>

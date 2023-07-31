@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fitness Tracker</title>
+  <style>
+    .btn-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: absolute;
+      width: 100%;
+      background-color: #21ace7;
+      padding: 20px;
+      box-sizing: border-box;
+      top: 0px;
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #e74c3c;
+      color: white;
+      border-color: white;
+      width: 150px;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    .btn:hover {
+      background-color: #81a544;
+    }
+
+    .h1-container {
+      text-align: center;
+      
+    }
+
+    .contan {
+      position: absolute;
+      top: 200px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("photo-1517838277536-f5f99be501cd.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .h2 {
+      position: relative;
+      
+      font-size: 5vw; /* Responsive font size based on viewport width */
+      color: rgb(243, 244, 246);
+      margin-top: 30px;
+    }
+
+    .h2-container {
+        position: absolute;
+      text-align: center;
+      top: 70%;
+    }
+
+    /* Additional styles for the button container */
+    .btn-container {
+        position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      top: 40%;
+      left: 20%;
+    }
+
+    .btn {
+      width: 120px;
+      margin: 5px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .h2 {
+        font-size: 10vw; /* Adjust responsive font size */
+      }
+    }
+
+    /* Add the styles for HOME and LOGIN buttons */
+    .btn1 {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-color: rgb(227, 180, 87);
+      box-sizing: border-box;
+      top: 70%;
+    }
+
+    .btn1:hover,.btn2:hover {
+      background-color: #9d9a97;
+    }
+    .btn2{
+        position: absolute;
+      right: 80px;
+      top: 20px;
+      background-color: rgb(227, 180, 87);
+      box-sizing: border-box;
+      top: 70%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><img src="download (1).jpg" height="25" width="50"> Welcome to Fitness Info</h1>
+    <input type="submit" id="home" value="HOME" class="btn1" onclick="redirectToNextPage8()">
+    <input type="submit" id="home2" value="LOGIN" class="btn2" onclick="redirectToNextPage9()">
+  </div>
+  <div class="h2-container">
+    <h2 class="h2">Invest on<br>Your Body</h2>
+  </div>
+  <div class="btn-container">
+    <button class="btn" onclick="redirectToNextPage1()">Day1</button>
+    <button class="btn" onclick="redirectToNextPage2()">Day2</button>
+    <button class="btn" onclick="redirectToNextPage3()">Day3</button>
+    <button class="btn" onclick="redirectToNextPage4()">Day4</button>
+    <button class="btn" onclick="redirectToNextPage5()">Day5</button>
+    <button class="btn" onclick="redirectToNextPage6()">Day6</button>
+    <button class="btn" onclick="redirectToNextPage7()">Day7</button>
+  </div>
+
+  <script>
+    function redirectToNextPage1() {
+      // Redirect to the next page
+      window.location.href = "day1.html";
+    }
+    function redirectToNextPage2() {
+      // Redirect to the next page
+      window.location.href = "day2.html";
+    }
+    function redirectToNextPage3() {
+      // Redirect to the next page
+      window.location.href = "day3.html";
+    }
+    function redirectToNextPage4() {
+      // Redirect to the next page
+      window.location.href = "day4.html";
+    }
+    function redirectToNextPage5() {
+      // Redirect to the next page
+      window.location.href = "day5.html";
+    }
+    function redirectToNextPage6() {
+      // Redirect to the next page
+      window.location.href = "day6.html";
+    }
+    function redirectToNextPage7() {
+      // Redirect to the next page
+      window.location.href = "day7.html";
+    }
+    function redirectToNextPage8() {
+      // Redirect to the next page
+      window.location.href = "index.html";
+    }
+    function redirectToNextPage9() {
+      // Redirect to the next page
+      window.location.href = "second.html";
+    }
+  </script>
+  <div class="contan"></div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  
+  <style>
+    /* Common styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* Container */
+    .container {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(26, 157, 234);
+      padding: 20px;
+      box-sizing: border-box;
+      top: 0;
+      text-align: right;
+    }
+
+    /* Center the container in the middle of the screen */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Login button */
+    .btn {
+      background-color: #21ace7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #9d9a97;
+    }
+
+    /* Heading styles */
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 4vw; /* Responsive font size based on viewport width */
+      margin: 5px;
+      color: rgb(10, 23, 33);
+    
+    }
+    h3{
+        position: absolute;
+        font-size: 4vw; /* Responsive font size based on viewport width */
+      margin: 5px;
+      left: 22%;
+      top: 55%;
+    }
+    h4{
+        position: absolute;
+        font-size: 4vw; /* Responsive font size based on viewport width */
+      margin: 5px;
+      left: 16%;
+      top: 50%;
+    }
+
+    /* Image styles */
+    /* Image styles */
+img {
+  position: absolute;
+  max-width: 40%; /* Adjust the image width to your preference */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  right: 10px; /* Move the image to the right end */
+  top: 50%; /* Adjust the vertical position of the image */
+  transform: translateY(-50%); /* Center the image vertically */
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 6vw;
+  }
+
+  h2, h3, h4 {
+    font-size: 6vw;
+  }
+
+  /* Adjust the image size and position on mobile */
+  img {
+    max-width: 70%;
+    right: 10px; /* Move the image to the right end */
+    top: 90%; /* Adjust the vertical position of the image */
+    transform: translateY(-50%); /* Center the image vertically */
+    box-sizing: border-box;
+  }
+}
+
+  </style>
+
+</head>
+<body>
+  <h2>Health </h2>
+  <h3>Wealth</h3>
+  <h4>is</h4>
+  <div class="container">
+    <h1>FITNESS INFO</h1>
+    <input type="submit" id="login" value="Login" class="btn" onclick="redirectToNextPage()">
+  </div>
+
+  <img src="photo-1517838277536-f5f99be501cd.jpg" width="350" height="250">
+
+  <script>
+    function redirectToNextPage() {
+      // Redirect to the next page
+      window.location.href = "second.html";
+    }
+  </script>
+</body>
+</html>

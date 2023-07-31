@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Over Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative; /* This is important to position the buttons relative to this container */
+            width: 100vw;
+            height: 100vh; /* Set the height as required */
+            background-image: url('photo-1517838277536-f5f99be501cd.jpg');
+            background-size: cover; /* Adjust this property as needed to resize the background image */
+        }
+
+        .button1,
+        .button2 {
+            position: absolute;
+            top: 50%; /* Adjust this value to vertically position the button */
+            left: 50%; /* Adjust this value to horizontally position the button */
+            transform: translate(-50%, -50%); /* This will center the buttons exactly on the background */
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button2 {
+            top: 60%; /* Example of placing the second button lower than the first button */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button1">Button 1</button>
+        <button class="button2">Button 2</button>
+    </div>
+</body>
+</html>

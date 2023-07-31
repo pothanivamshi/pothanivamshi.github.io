@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    .btn {
+      background-color: #0bdca4;
+      color: white;
+      border-color: white;
+      padding: 10px 20px;
+    }
+    .btn:hover {
+      background-color: #44a58c;
+    }
+    h1{
+      text-align: center;
+    }
+    .img{
+      align-items: center;
+    }
+  </style>
+  <h1>Welcome to Fitness Tracker</h1>
+  
+</head>
+<body>
+  <button class="btn" onclick="redirectToNextPage1()">FitnessTracker</button><br>
+  <button class="btn" onclick="redirectToNextPage2()">FitnessInfo</button>
+  <button class="btn" onclick="redirectToNextPage3()">Diet</button>
+  <image class="img"   src="Screenshot 2023-07-21 235516.png" width="300" height="200" ></image>
+  <script>
+    function redirectToNextPage1() {
+      // Redirect to the next page
+      window.location.href = "pra.html";
+    }
+    function redirectToNextPage2() {
+      // Redirect to the next page
+      window.location.href = "fitnessInfo.html";
+    }
+    function redirectToNextPage3() {
+      // Redirect to the next page
+      window.location.href = "diet.html";
+    }
+  </script>
+
+</body>
+</html>
